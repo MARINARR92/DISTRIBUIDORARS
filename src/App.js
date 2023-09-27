@@ -1,33 +1,54 @@
 import React from 'react';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import Home from './pages/Home';
+import Company from './pages/Company';
+import Contact from './pages/Contact';
+import Partners from './pages/Partners';
+import Products from './pages/Products';
+
+
+
+
 
 // import components
-import Hero from './components/Hero';
+
 import Header from './components/Header';
-import About from './components/About';
-import GallerySection from './components/GallerySection';
-import Skills from './components/Skills';
-import Interview from './components/Interview';
-import Testimonial from './components/Testimonial';
-import Contact from './components/Contact';
+
 import Footer from './components/Footer';
 import Copyright from './components/Copyright';
 
-const App = () => {
+
+const Layout = ()=> {
   return (
-    <div className='max-w-[1920px] mx-auto overflow-hidden bg-white'>
+    <div>
       <Header />
-      <Hero />
-      <About />
-      <GallerySection />
-      <Skills />
-      <Testimonial />
-      <Interview />
-      <Contact />
+      <Outlet />
       <Footer />
       <Copyright />
-      {/* <div className='h-[4000px]'></div> */}
     </div>
+    
   );
 };
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      {path: '/', element: <Home />}, 
+      {path: '/company', element: <Company />}, 
+      {path: '/contact', element: <Contact />}, 
+      {path: '/partners', element: <Partners />}, 
+      {path: '/products', element: <Products />},           
+
+    ],
+  },
+
+]);
+
+const App = () => {
+  return <div>
+    <RouterProvider router={router} />
+  </div>;
+};
+
 
 export default App;

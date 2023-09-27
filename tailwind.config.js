@@ -21,19 +21,18 @@ module.exports = {
     },
     extend: {
       colors: {
+        orange: '#EE5744',
+        blue: '#043F6F',
         dark: '#111111',
         grey: {
           DEFAULT: '#555555',
         },
       },
       backgroundImage: {
-        hero: "url('/src/img/hero/bg.jpg')",
-        about: "url('/src/img/about/image.png')",
-        interview: "url('/src/img/interview/bg.png')",
+        hero: "url('/src/img/hero/bg.png')",
+        about: "url('/src/img/about/about1.png')",        
       },
-      content: {
-        outlineText: 'url("/src/img/hero/outline-text.svg")',
-      },
+     
     },
   },
   plugins: [],

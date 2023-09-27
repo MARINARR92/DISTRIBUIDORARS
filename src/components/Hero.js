@@ -1,7 +1,53 @@
 import React from 'react';
+import { heroData } from '../data';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants';
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.6,
+    }
+
+  }
+}
 
 const Hero = () => {
-  return <div>Hero</div>;
+  const {title, subtitle} = heroData
+  return (
+    <section className='bg-hero bg-cover bg-center min-h-[40vh]
+    lg:h-[948px] bg-no-repeat relative mt-[120px] lg:mt-[150px]'>    
+      <motion.div
+      variants={container} 
+      initial='hidden'
+      whileInView={'show'}
+
+      className="container mx-auto min-h-[40vh] lg:h-full flex items-center
+      justify-center xl:justify-end">
+      <div className='text-blue text-center lg:text-left
+      lg:max-w-[640px]'>
+        <motion.h1
+          variants={fadeIn('down')}
+          className='h1 text-center'>{title} 
+                  
+        </motion.h1>
+        <motion.h1 
+          variants={fadeIn('down')}
+          className='h1 text-orange text-center text-bold'>{subtitle} 
+                  
+        </motion.h1>
+      
+        
+      </div>
+      <div className='hidden xl:flex absolute -bottom-2
+        right-0 left-0'>
+
+      </div>
+    </motion.div>
+    </section>
+  );
 };
 
 export default Hero;
