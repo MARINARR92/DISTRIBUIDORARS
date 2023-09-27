@@ -1,9 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import { contactData } from "../data";
+import emailjs from '@emailjs/browser';
+
 
 
 const Contacts = () => {
+
   const { title, subtitle, form, label } = contactData;
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [number, setNumber] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
+  
+
+  function sendEmail(e){
+    e.preventDefault();
+
+    if(name === '' || message === '' || subject === '' || number === ''){
+      alert("Preencha todos os campos");
+      return;
+
+
+    }
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+      number: number,
+      subject: subject
+
+    }
+    emailjs.send("service_n3cwekb", "template_lp7b6us", templateParams, "-4VAUYlmy0nbeIgXJ")
+    .then((response) => {
+      console.log("EMAIL ENVIADO", response.status, response.text)
+      setName('')
+      setEmail('')
+      setNumber('')
+      setSubject('')
+      setMessage('')
+    }, (err) => {
+      console.log('ERRO: ', err)
+    })
+  }
+ 
  
   return (
     <section className="py-[40px] lg:py-[160px]">
@@ -13,7 +54,7 @@ const Contacts = () => {
         <h1 className="mb-8 lg:mb-16 leading-relaxed text-center">
           {subtitle}
         </h1>
-        <form>
+        <form onSubmit={sendEmail}>
           <div className="grid gap-6 mb-6 md:grid-cols-2">
             <div>
               <label className="block text-black text-sm link mb-2" for="nome">
@@ -26,6 +67,8 @@ const Contacts = () => {
                  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder={form.name}
                 type="text"
+                onChange={(e) => setName(e.target.value)}
+                value={name}
               />
             </div>
             <div>
@@ -39,6 +82,8 @@ const Contacts = () => {
                 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder={form.email}
                 type="text"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
               />
             </div>
             <div>
@@ -55,6 +100,8 @@ const Contacts = () => {
                 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder={form.number}
                 type="text"
+                onChange={(e) => setNumber(e.target.value)}
+              value={number}
               />
             </div>
 
@@ -72,6 +119,8 @@ const Contacts = () => {
                 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder={form.subject}
                 type="text"
+                onChange={(e) => setSubject(e.target.value)}
+              value={subject}
               />
             </div>
           </div>
@@ -90,6 +139,8 @@ const Contacts = () => {
                  dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder={form.message}
               type="text"
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
             ></textarea>
           </div>
 
