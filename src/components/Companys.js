@@ -21,10 +21,7 @@ const Companys = () => {
             </p>
             <p className="mb-8 lg:mb-2 leading-relaxed text-left">
               {subtitle2}
-            </p>
-            <p className="mb-8 lg:mb-2 leading-relaxed text-left">
-              {subtitle1}
-            </p>
+            </p>        
             <p className="mb-8 lg:mb-2 leading-relaxed text-left">
               {subtitle3}
             </p>
