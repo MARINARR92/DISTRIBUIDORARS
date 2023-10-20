@@ -2,7 +2,7 @@
 
 const Product = () => {
 
-  const pdfUrl = 'https://drive.google.com/file/d/1bhIsXAz8U5LB3NXLMm64-HKrwJZCwimv/view?usp=sharing'
+  const pdfUrl = 'https://drive.google.com/file/d/1gvpJFKYxASXkVWrip_0kzI_-cciZ9VXS/view?usp=share_link'
  
 
 
