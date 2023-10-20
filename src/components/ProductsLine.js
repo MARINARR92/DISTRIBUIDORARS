@@ -66,7 +66,7 @@ const ProductsLine = () => {
         >
           <>
             {slides.map((slide, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className="flex justify-center items-center">
                 <div
                   className="grad w-[280px] h-[362px] rounder-[8px]
             overflow-hidden relative group"
@@ -88,7 +88,7 @@ const ProductsLine = () => {
                     <div className="text-center text-gray-800 mb-3 link ">
                       {slide.title}
                     </div>
-                    <div className="text-[15px] mb-2 lg:mb-9 items-center justify-center mx-4 text-blue-400">
+                    <div className="w-[362px] text-[15px] mb-2 lg:mb-9 items-center justify-center mx-4 text-blue-400">
                       <a
                         href={slide.link}
                         className="text-blue mt-2 hover:underline"

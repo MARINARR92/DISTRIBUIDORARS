@@ -66,7 +66,7 @@ const GallerySection = () => {
     >
       <>
       {slides.map((slide, index) => (
-        <SwiperSlide key={index}>
+        <SwiperSlide key={index} className="flex justify-center items-center">
           <div className='grad h-[160px] w-[180px] border-2 rounder-[8px]
             overflow-hidden relative group flex items-center 
             justify-center mb-20'>
