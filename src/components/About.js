@@ -21,7 +21,7 @@ const About = () => {
           >
             <h2 className="h2">{title}</h2>
             <div className="flex flex-col items-end">
-              <div className="max-w-[530px] text-grey">
+              <div className="max-w-[530px] text-grey font-semibold">
                 <p className="mb-6">{subtitle1}</p>
                 <p className="mb-9">{subtitle2}</p>
                 <a

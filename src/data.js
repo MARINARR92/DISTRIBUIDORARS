@@ -9,6 +9,8 @@ import ProductImg6 from '../src/img/product/6.png';
 import ProductImg7 from '../src/img/product/7.png';
 import ProductImg8 from '../src/img/product/8.png';
 import ProductImg9 from '../src/img/product/9.png';
+import ProductImg10 from '../src/img/product/10.png';
+import ProductImg11 from '../src/img/product/11.png';
 import GalleryImg1 from '../src/img/gallery/1.png';
 import GalleryImg2 from '../src/img/gallery/2.png';
 import GalleryImg3 from '../src/img/gallery/3.png';
@@ -18,12 +20,16 @@ import GalleryImg6 from '../src/img/gallery/6.png';
 import GalleryImg7 from '../src/img/gallery/7.png';
 import GalleryImg8 from '../src/img/gallery/8.png';
 import GalleryImg9 from '../src/img/gallery/9.png';
+import GalleryImg10 from '../src/img/gallery/10.png';
+import GalleryImg11 from '../src/img/gallery/11.png';
+
+
 
 
 
 // import icons
-import { IoLogoWhatsapp, IoMdArrowForward, IoIosCall } from 'react-icons/io';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { IoLogoWhatsapp, IoMdArrowForward } from 'react-icons/io';
+import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import {
   IoLogoInstagram,
 } from 'react-icons/io';
@@ -49,9 +55,8 @@ export const navData = {
 };
 
 export const socialData = [ 
-  { href: 'https://www.instagram.com/distribuidorars72/', icon: <IoLogoInstagram style={customIconStyle}/> },
+  { href: 'https://www.instagram.com/distribuidorarsltda/', icon: <IoLogoInstagram style={customIconStyle}/> },
   { href: 'https://api.whatsapp.com/send?phone=5537999538582&text=', icon: <IoLogoWhatsapp style={customIconStyle}/> },
-  { href: 'tel:+3733227225', icon: <IoIosCall style={customIconStyle}/> },
 ];
 
 export const heroData = {
@@ -59,6 +64,7 @@ export const heroData = {
   subtitle:
     'MELHOR!',
 };
+
 
 export const productData = {
   btnText: 'Saiba Mais',
@@ -126,8 +132,8 @@ export const productData = {
       original: ProductImg8,
       width: 280,
       height: 280,
-      title: 'Cemil',      
-      link:'https://www.cemil.com.br/',
+      title: 'President',      
+      link:'https://queijospresident.com.br/',
       
     },
     {
@@ -135,8 +141,24 @@ export const productData = {
       original: ProductImg9,
       width: 280,
       height: 280,
-      title: 'Piracanjuba',        
-      link:'https://www.piracanjuba.com.br/',  
+      title: 'Batavo',        
+      link:'https://batavo.com.br/',  
+    },
+    {
+      src: ProductImg10,
+      original: ProductImg10,
+      width: 280,
+      height: 280,
+      title: 'Só Minas',        
+      link:'https://www.sominas.com.br/',  
+    },
+    {
+      src: ProductImg11,
+      original: ProductImg11,
+      width: 280,
+      height: 280,
+      title: 'Bem Brasil',        
+      link:'https://www.bembrasil.ind.br/',  
     },
   ],
 };
@@ -144,9 +166,9 @@ export const productData = {
 export const aboutData = {
   title: 'Sobre nós:',
   subtitle1:
-    'A DISTRIBUIDORA RS é uma empresa de distribuição de alimentos, bebidas e produtos derivados de leite, atuando no seguimento de linha "seca" e resfriados, com abrangência no Centro-Oeste de Minas Gerais.',
+    'Com uma trajetória de 20 anos pautada pela excelência, a Distribuidora RS tem sido líder na distribuição de produtos alimentícios no Centro-Oeste de Minas Gerais. Fundada em 12 de setembro de 2000, na acolhedora cidade de Formiga-MG, nossa empresa se destaca pela parceria sólida com as principais marcas do mercado, como Itambé, Batavo, President, Poços de Caldas, Parmalat, Cotoches, Vitarella, Bem Brasil, Croques, Joselito, Maguary e Só Minas.',
   subtitle2:
-    'Fundada em 12/09/2000, na cidade de Formiga- MG, atualmente conta com estrutura de 17 colaboradores, 5 caminhões refrigerados, 3 veículos leves e 1 galpão de 4.500 metros ², atendento mensalmente cerca de 720 clientes.',
+    'Na Distribuidora RS, a eficiência é um pilar fundamental. Estamos sempre empenhados em superar as expectativas dos nossos clientes, oferecendo um serviço que alia agilidade na entrega à variedade de produtos de altíssima qualidade. Nosso objetivo é contribuir para o sucesso dos negócios dos nossos parceiros comerciais, proporcionando soluções em distribuição que fazem a diferença.',
   btnText: 'Saiba Mais',
   btnIcon: <IoMdArrowForward />,
 };
@@ -213,18 +235,18 @@ export const galleryData = {
       original: GalleryImg7,
       width: 220,
       height: 220,
-      title: 'Cemil',
-      description: 'Indústria parceira no seguimento de lácteos.',
-      link:'https://www.cemil.com.br/',
+      title: 'Vitarella',
+      description: 'Indústria parceira no seguimento de bolacha.',
+      link:'https://vitarella.com.br/',
     },
     {
       src: GalleryImg8,
       original: GalleryImg8,
       width: 220,
       height: 220,
-      title: 'Piracanjuba',
-      description: 'Indústria parceira no seguimento de lácteos.',
-      link:'https://www.piracanjuba.com.br/',
+      title: 'Bem Brasil',
+      description: 'Indústria parceira no seguimento de batata congelada.',
+      link:'https://www.bembrasil.ind.br/',
       
     },
     {
@@ -232,21 +254,39 @@ export const galleryData = {
       original: GalleryImg9,
       width: 220,
       height: 220,
-      title: 'Vitarella',
-      description: 'Indústria parceira no seguimento de bolacha.',
-      link:'https://vitarella.com.br/',  
+      title: 'Só Minas',
+      description: 'Indústria parceira no seguimento de pão de alho.',
+      link:'https://www.sominas.com.br/',  
+    },
+    {
+      src: GalleryImg10,
+      original: GalleryImg10,
+      width: 220,
+      height: 220,
+      title: 'President',
+      description: 'Indústria parceira no seguimento de queijos.',
+      link:'https://queijospresident.com.br/',  
+    },
+    {
+      src: GalleryImg11,
+      original: GalleryImg11,
+      width: 220,
+      height: 220,
+      title: 'Batavo',
+      description: 'Indústria parceira no seguimento de lácteos.',
+      link:'https://batavo.com.br/',  
     },
   ],
 };
 
 export const companyData = {
   title: 'A EMPRESA',
-  subtitle1: 'A Distribuidora RS foi fundada em 2005, na cidade de Formiga/MG. Nossa empresa traz consigo uma trajetória de sucesso que se estende por impressionantes 18 anos. Ao longo dessa jornada, consolidamos nossa posição como um nome de destaque no mercado de distribuição, oferecendo produtos de alta qualidade a diversas cidades do Centro-Oeste Mineiro.',
-  subtitle2: 'Nosso compromisso com a excelência é evidente em nossas parcerias com marcas respeitadas, incluindo nomes como Itambé, Camponesa, Poços de Caldas, Piracanjuba, Cemil, Croques, Vitarella, Quatá, Maguary, Richester e Joselito. Estas parcerias nos permitem oferecer uma gama diversificada de produtos, atendendo às necessidades variadas dos nossos clientes.',
-  subtitle3: 'Nossa experiência de 18 anos no setor de distribuição nos deu uma compreensão profunda do mercado local, bem como uma visão precisa das necessidades dos consumidores.',  
-  subtitle4: 'Hoje, nossa área de atuação abrange um amplo território, servindo diversas cidades do Centro-Oeste Mineiro. Estamos constantemente comprometidos em aprimorar nossas operações logísticas para garantir que os produtos cheguem aos nossos clientes de forma eficiente e segura.',  
-  subtitle5: 'Nossa infraestrutura moderna inclui um galpão de aproximadamente 1200 metros quadrados localizado em Formiga, que oferece espaço adequado para armazenagem e controle de estoque. Além disso, nossa frota de 5 caminhões baú, equipados para o transporte seguro, garante a integridade dos produtos durante todo o percurso até os pontos de venda.',
-  subtitle6: 'Nossa equipe é o coração da Distribuidora RS, composta por 17 colaboradores altamente capacitados e dedicados, que compartilham nosso compromisso com a excelência e a satisfação do cliente. Todos eles possuem um profundo conhecimento do mercado e ampla experiência no setor de distribuição.',
+  subtitle1: 'A Distribuidora RS foi fundada em 2000, na cidade de Formiga/MG. Nossa empresa traz consigo uma trajetória de sucesso, ao longo dessa jornada, consolidamos nossa posição como um nome de destaque no mercado de distribuição, oferecendo produtos de alta qualidade a diversas cidades do Centro-Oeste Mineiro.',
+  subtitle2: 'Nosso compromisso com a excelência é evidente em nossas parcerias com marcas respeitadas, incluindo nomes como Itambé, Batavo, President, Poços de Caldas, Parmalat, Cotoches, Vitarella, Bem Brasil, Croques, Joselito, Maguary e Só Minas. Estas parcerias nos permitem oferecer uma gama diversificada de produtos, atendendo às necessidades variadas dos nossos clientes.',
+  subtitle3: 'Nossa experiência no setor de distribuição nos deu uma compreensão profunda do mercado local, bem como uma visão precisa das necessidades dos consumidores.',  
+  subtitle4: 'Hoje, nossa área de atuação abrange um amplo território, atendento mensalmente cerca de 720 clientes. Estamos constantemente comprometidos em aprimorar nossas operações logísticas para garantir que os produtos cheguem aos nossos clientes de forma eficiente e segura.',  
+  subtitle5: 'Nossa infraestrutura moderna inclui um galpão localizado em Formiga, que oferece espaço adequado para armazenagem e controle de estoque. Além disso, nossa frota de 5 caminhões baú, equipados para o transporte seguro, garante a integridade dos produtos durante todo o percurso até os pontos de venda.',
+  subtitle6: 'Nossa equipe é o coração da Distribuidora RS, composta por 27 colaboradores altamente capacitados e dedicados, que compartilham nosso compromisso com a excelência e a satisfação do cliente. Todos eles possuem um profundo conhecimento do mercado e ampla experiência no setor de distribuição.',
 }
 
 
@@ -299,10 +339,7 @@ export const footerData = {
       icon: <IoLogoWhatsapp />,
       number: '+55 37 99953-8582',
     },
-    phone: {
-      icon: <FaPhoneAlt />,
-      number: '+55 37 3322-7225',
-    },
+
     email: {
       icon: <FaEnvelope />,
       address: 'distribuidoraalimentosrs@yahoo.com.br',

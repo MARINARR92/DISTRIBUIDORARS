@@ -16,22 +16,22 @@ const Companys = () => {
         </div>
         
         
-            <p className="mb-8 lg:mb-2 leading-relaxed text-left">
+            <p className="mb-8 lg:mb-2 leading-relaxed font-semibold text-left">
               {subtitle1}
             </p>
-            <p className="mb-8 lg:mb-2 leading-relaxed text-left">
+            <p className="mb-8 lg:mb-2 leading-relaxed font-semibold text-left">
               {subtitle2}
           </p>
-            <p className="mb-8 lg:mb-2 leading-relaxed text-left">
+            <p className="mb-8 lg:mb-2 leading-relaxed font-semibold text-left">
               {subtitle3}
             </p>
-            <p className="mb-8 lg:mb-2 leading-relaxed text-left">
+            <p className="mb-8 lg:mb-2 leading-relaxed font-semibold text-left">
               {subtitle4}
             </p>
-            <p className="mb-8 lg:mb-2 leading-relaxed text-left">
+            <p className="mb-8 lg:mb-2 leading-relaxed font-semibold text-left">
               {subtitle5}
             </p>
-            <p className="mb-8 lg:mb-2 leading-relaxed text-left">
+            <p className="mb-8 lg:mb-2 leading-relaxed font-semibold text-left">
               {subtitle6}
             </p>
        

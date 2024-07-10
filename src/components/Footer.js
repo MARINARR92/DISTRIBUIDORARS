@@ -68,10 +68,6 @@ const Footer = () => {
                 <div>{contact.address.name}</div>
               </div>
               <div className='flex items-center gap-x-[10px]'>
-                <div>{contact.phone.icon}</div>
-                <div>{contact.phone.number}</div>
-              </div>
-              <div className='flex items-center gap-x-[10px]'>
                 <div>{contact.whatsapp.icon}</div>
                 <div>{contact.whatsapp.number}</div>
               </div>

@@ -17,7 +17,7 @@ const Copyright = () => {
           }}
           viewport={{ once: false, amount: 0 }}
           className='tracking-[0.02em] text-base'>
-          <span className='font-semibold text-white'>Distribuidora RS</span> &copy; - 2023 -
+          <span className='font-semibold text-white'>Distribuidora RS</span> &copy; - 2024 -
           Todos os direitos reservados.
 
         </motion.div>
